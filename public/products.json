@@ -1,0 +1,190 @@
+[
+    {
+        "product_id": 10101,
+        "product_title": "Galaxy S23",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Smartphone",
+        "price": 829.99,
+        "description": "Galaxy S23 with a 6.2-inch display, triple-lens camera, and Exynos processor.",
+        "specification": [
+            "Display: 6.2 inches, 2400x1080 pixels",
+            "Processor: Exynos 2100",
+            "RAM: 8GB",
+            "Storage: 128GB",
+            "Battery: 4000mAh",
+            "Camera: 64MP + 12MP + 12MP rear, 10MP front",
+            "OS: Android 11"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 20202,
+        "product_title": "iPhone 14 Pro",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Smartphone",
+        "price": 1099.99,
+        "description": "Apple iPhone 14 Pro with Super Retina XDR display and A15 Bionic chip.",
+        "specification": [
+            "Display: 6.1 inches, 2532x1170 pixels",
+            "Processor: A15 Bionic",
+            "RAM: 6GB",
+            "Storage: 256GB",
+            "Battery: 3095mAh",
+            "Camera: 12MP + 12MP + 12MP rear, 12MP front",
+            "OS: iOS 15"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 30303,
+        "product_title": "OnePlus 10",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Smartphone",
+        "price": 779.99,
+        "description": "OnePlus 10 with 6.55-inch AMOLED display and Hasselblad triple-lens camera.",
+        "specification": [
+            "Display: 6.55 inches, 2400x1080 pixels",
+            "Processor: Snapdragon 888",
+            "RAM: 8GB",
+            "Storage: 128GB",
+            "Battery: 4500mAh",
+            "Camera: 48MP + 50MP + 2MP rear, 16MP front",
+            "OS: Android 11"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 40404,
+        "product_title": "Pixel 7",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Smartphone",
+        "price": 649.99,
+        "description": "Google Pixel 7 with OLED display and Google Tensor processor.",
+        "specification": [
+            "Display: 6.4 inches, 2400x1080 pixels",
+            "Processor: Google Tensor",
+            "RAM: 8GB",
+            "Storage: 128GB",
+            "Battery: 4614mAh",
+            "Camera: 50MP + 12MP rear, 8MP front",
+            "OS: Android 12"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 50505,
+        "product_title": "Galaxy A52",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Smartphone",
+        "price": 499.99,
+        "description": "Samsung Galaxy A52 with Snapdragon processor and 6.5-inch display.",
+        "specification": [
+            "Display: 6.5 inches, 2400x1080 pixels",
+            "Processor: Snapdragon 720G",
+            "RAM: 6GB",
+            "Storage: 128GB",
+            "Battery: 4500mAh",
+            "Camera: 64MP + 12MP + 5MP rear, 32MP front",
+            "OS: Android 11"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 60606,
+        "product_title": "Xiaomi Mi 11",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Smartphone",
+        "price": 599.99,
+        "description": "Xiaomi Mi 11 with AMOLED display and Snapdragon 888 processor.",
+        "specification": [
+            "Display: 6.81 inches, 3200x1440 pixels",
+            "Processor: Snapdragon 888",
+            "RAM: 8GB",
+            "Storage: 256GB",
+            "Battery: 4600mAh",
+            "Camera: 108MP + 13MP + 5MP rear, 20MP front",
+            "OS: Android 11"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 70707,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Laptop",
+        "price": 1049.99,
+        "description": "Apple MacBook Air with M2 chip and 13-inch Retina display.",
+        "specification": [
+            "Display: 13.3 inches, 2560x1600 pixels",
+            "Processor: Apple M2",
+            "RAM: 8GB",
+            "Storage: 256GB SSD",
+            "Battery: Up to 18 hours",
+            "Graphics: Integrated Apple GPU",
+            "OS: macOS"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 80808,
+        "product_title": "Dell XPS 15",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "Dell XPS 15 with InfinityEdge display and Intel's 11th-gen processor.",
+        "specification": [
+            "Display: 15 inches, 1920x1200 pixels",
+            "Processor: Intel Core i7-1185G7",
+            "RAM: 16GB",
+            "Storage: 512GB SSD",
+            "Battery: 52Wh",
+            "Graphics: Intel Iris Xe Graphics",
+            "OS: Windows 10 Pro"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 90909,
+        "product_title": "Sony WF-1000XM5",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "TWS",
+        "price": 299.99,
+        "description": "Sony WF-1000XM5 true wireless earbuds with noise cancellation.",
+        "specification": [
+            "Battery Life: 24 hours with charging case",
+            "Water Resistance: IPX4",
+            "Bluetooth Version: 5.2",
+            "Charging Type: USB-C",
+            "Microphones: Beamforming microphones",
+            "Additional Features: Active Noise Cancellation, Adaptive Sound Control"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 101010,
+        "product_title": "AirPods Pro 2",
+        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "category": "TWS",
+        "price": 249.99,
+        "description": "Apple AirPods Pro with noise cancellation and spatial audio.",
+        "specification": [
+            "Battery Life: 24 hours with charging case",
+            "Water Resistance: IPX4",
+            "Bluetooth Version: 5.0",
+            "Charging Type: Lightning",
+            "Microphones: Dual beamforming microphones",
+            "Additional Features: Active Noise Cancellation, Transparency Mode"
+        ],
+        "availability": true,
+        "rating": 4.6
+    }
+]
