@@ -5,12 +5,19 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Gadget from './assets/components/Gadget/Gadget.jsx';
+import Gadget from './components/Gadget/Gadget';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Gadget></Gadget>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        
+      }
+    ]
   },
 ]);
 
