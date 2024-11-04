@@ -7,16 +7,14 @@
         "price": 829.99,
         "description": "Galaxy S23 with a 6.2-inch display, triple-lens camera, and Exynos processor.",
         "specification": [
-            "Display: 6.2 inches, 2400x1080 pixels",
             "Processor: Exynos 2100",
             "RAM: 8GB",
             "Storage: 128GB",
-            "Battery: 4000mAh",
-            "Camera: 64MP + 12MP + 12MP rear, 10MP front",
-            "OS: Android 11"
+            "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.5
+        "rating": 4.5,
+        "rating_star": "★★★★☆"
     },
     {
         "product_id": 20202,
@@ -26,16 +24,14 @@
         "price": 1099.99,
         "description": "Apple iPhone 14 Pro with Super Retina XDR display and A15 Bionic chip.",
         "specification": [
-            "Display: 6.1 inches, 2532x1170 pixels",
             "Processor: A15 Bionic",
             "RAM: 6GB",
             "Storage: 256GB",
-            "Battery: 3095mAh",
-            "Camera: 12MP + 12MP + 12MP rear, 12MP front",
-            "OS: iOS 15"
+            "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 4.8,
+        "rating_star": "★★★★☆"
     },
     {
         "product_id": 30303,
@@ -45,16 +41,14 @@
         "price": 779.99,
         "description": "OnePlus 10 with 6.55-inch AMOLED display and Hasselblad triple-lens camera.",
         "specification": [
-            "Display: 6.55 inches, 2400x1080 pixels",
             "Processor: Snapdragon 888",
             "RAM: 8GB",
             "Storage: 128GB",
-            "Battery: 4500mAh",
-            "Camera: 48MP + 50MP + 2MP rear, 16MP front",
-            "OS: Android 11"
+            "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.4
+        "rating": 4.4,
+        "rating_star": "★★★☆☆"
     },
     {
         "product_id": 40404,
@@ -64,16 +58,14 @@
         "price": 649.99,
         "description": "Google Pixel 7 with OLED display and Google Tensor processor.",
         "specification": [
-            "Display: 6.4 inches, 2400x1080 pixels",
             "Processor: Google Tensor",
             "RAM: 8GB",
             "Storage: 128GB",
-            "Battery: 4614mAh",
-            "Camera: 50MP + 12MP rear, 8MP front",
-            "OS: Android 12"
+            "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.6,
+        "rating_star": "★★★☆☆"
     },
     {
         "product_id": 50505,
@@ -83,16 +75,14 @@
         "price": 499.99,
         "description": "Samsung Galaxy A52 with Snapdragon processor and 6.5-inch display.",
         "specification": [
-            "Display: 6.5 inches, 2400x1080 pixels",
             "Processor: Snapdragon 720G",
             "RAM: 6GB",
             "Storage: 128GB",
-            "Battery: 4500mAh",
-            "Camera: 64MP + 12MP + 5MP rear, 32MP front",
-            "OS: Android 11"
+            "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.3
+        "rating": 4.3,
+        "rating_star": "★★☆☆☆"
     },
     {
         "product_id": 60606,
@@ -102,16 +92,14 @@
         "price": 599.99,
         "description": "Xiaomi Mi 11 with AMOLED display and Snapdragon 888 processor.",
         "specification": [
-            "Display: 6.81 inches, 3200x1440 pixels",
             "Processor: Snapdragon 888",
             "RAM: 8GB",
             "Storage: 256GB",
-            "Battery: 4600mAh",
-            "Camera: 108MP + 13MP + 5MP rear, 20MP front",
-            "OS: Android 11"
+            "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.7,
+        "rating_star": "★★★★☆"
     },
     {
         "product_id": 70707,
@@ -121,16 +109,14 @@
         "price": 1049.99,
         "description": "Apple MacBook Air with M2 chip and 13-inch Retina display.",
         "specification": [
-            "Display: 13.3 inches, 2560x1600 pixels",
             "Processor: Apple M2",
             "RAM: 8GB",
             "Storage: 256GB SSD",
-            "Battery: Up to 18 hours",
-            "Graphics: Integrated Apple GPU",
-            "OS: macOS"
+            "Battery: Up to 18 hours"
         ],
         "availability": true,
-        "rating": 4.9
+        "rating": 4.9,
+        "rating_star": "★★★★★"
     },
     {
         "product_id": 80808,
@@ -140,16 +126,14 @@
         "price": 1399.99,
         "description": "Dell XPS 15 with InfinityEdge display and Intel's 11th-gen processor.",
         "specification": [
-            "Display: 15 inches, 1920x1200 pixels",
             "Processor: Intel Core i7-1185G7",
             "RAM: 16GB",
             "Storage: 512GB SSD",
-            "Battery: 52Wh",
-            "Graphics: Intel Iris Xe Graphics",
-            "OS: Windows 10 Pro"
+            "Battery: 52Wh"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.7,
+        "rating_star": "★★★★☆"
     },
     {
         "product_id": 90909,
@@ -162,12 +146,11 @@
             "Battery Life: 24 hours with charging case",
             "Water Resistance: IPX4",
             "Bluetooth Version: 5.2",
-            "Charging Type: USB-C",
-            "Microphones: Beamforming microphones",
-            "Additional Features: Active Noise Cancellation, Adaptive Sound Control"
+            "Charging Type: USB-C"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.7,
+        "rating_star": "★★★★☆"
     },
     {
         "product_id": 101010,
@@ -180,11 +163,10 @@
             "Battery Life: 24 hours with charging case",
             "Water Resistance: IPX4",
             "Bluetooth Version: 5.0",
-            "Charging Type: Lightning",
-            "Microphones: Dual beamforming microphones",
-            "Additional Features: Active Noise Cancellation, Transparency Mode"
+            "Charging Type: Lightning"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.6,
+        "rating_star": "★★★☆☆"
     }
 ]

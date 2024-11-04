@@ -1,10 +1,24 @@
+import { NavLink, useLocation } from "react-router-dom";
+
 const Navbar = () => {
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
+
+    const links = (
+        <>
+            <li><NavLink to={"/"}>Home</NavLink></li>
+            <li><a>Statistics</a></li>
+            <li><a>Dashboard</a></li>
+            <li><a>History</a></li>
+        </>
+    );
+
     return (
         <div>
-            <div className="navbar bg-[#9538E2] lg:pt-5 lg:px-20">
+            <div className={`navbar ${isHomePage ? 'bg-[#9538E2] text-white' : 'bg-white text-black'} rounded-t-2xl lg:pt-5 lg:px-10`}>
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
+                        <div tabIndex={0} role="button" className={`btn btn-ghost lg:hidden ${isHomePage ? 'text-black' : ''}`}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
@@ -21,24 +35,18 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Statistics</a></li>
-                            <li><a>Dashboard</a></li>
-                            <li><a>History</a></li>
+                            {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-lg lg:text-xl text-white">Gadget Heaven</a>
+                    <a className={`btn btn-ghost text-lg lg:text-xl ${isHomePage ? 'text-white' : 'text-black'}`}>Gadget Heaven</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 text-white">
-                        <li><a>Home</a></li>
-                        <li><a>Statistics</a></li>
-                        <li><a>Dashboard</a></li>
-                        <li><a>History</a></li>
+                    <ul className={`menu menu-horizontal px-1 ${isHomePage ? 'text-white' : 'text-black'}`}>
+                        {links}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle bg-white">
+                    <div tabIndex={0} role="button" className={`btn btn-ghost btn-circle ${isHomePage ? 'bg-white text-black' : 'bg-white'} border border-gray-300`}>
                         <div className="indicator">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -55,9 +63,9 @@ const Navbar = () => {
                             <span className="badge-sm indicator-item left-1">8</span>
                         </div>
                     </div>
-                    <button className="btn btn-ghost btn-circle bg-white ml-3">
+                    <button className={`btn btn-ghost btn-circle ${isHomePage ? 'bg-white text-black' : 'bg-white'} border border-gray-300 ml-3`}>
                         <div className="indicator">
-                            <i class="fa-regular fa-heart text-base"></i>
+                            <i className="fa-regular fa-heart text-base"></i>
                             <span className="badge-xs indicator-item">8</span>
                         </div>
                     </button>
