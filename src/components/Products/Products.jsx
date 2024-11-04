@@ -33,8 +33,8 @@ const Products = () => {
         <div className="w-11/12 mx-auto -mt-28">
             <h2 className="text-4xl font-bold text-center mb-10">Explore Cutting-Edge Gadgets</h2>
             <div className="lg:flex gap-8">
-                <div className="p-5 rounded-xl lg:border w-80 lg:h-[295px] mx-auto mb-5 shadow-md">
-                    <div className="grid grid-cols-2 lg:grid-cols-1 gap-5">
+                <div className="p-5 rounded-xl lg:border md:w-full lg:w-80 lg:h-[295px] mx-auto mb-10 shadow-md">
+                    <div className="grid grid-cols-2 lg:grid-cols-1 md:grid-cols-4 gap-5">
                         <button
                             onClick={() => handleCategoryClick("All Products")}
                             className={`btn rounded-3xl ${activeCategoryBtn === "All Products" ? "bg-[#9538E2] text-white" : ""}`}
