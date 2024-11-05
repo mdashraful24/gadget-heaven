@@ -14,6 +14,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dascart from './components/Dascart/Dascart';
 import Statistics from './components/Statistics/Statistics';
+import History from './components/History/History';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <Dascart></Dascart>
+      },
+      {
+        path: 'history',
+        element: <History></History>
       }
     ]
   },

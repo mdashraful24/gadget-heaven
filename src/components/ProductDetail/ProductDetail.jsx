@@ -96,17 +96,12 @@ const ProductDetail = () => {
     const { product_image, product_title, price, description, specification, availability, rating, rating_star } = product;
 
     const handleAddToCart = () => {
-        if (cart.some((item) => item.product_id === product.product_id)) {
-            toast.warn("Product is already in the cart!", {
-                position: "top-center"
-            });
-        } else {
-            setCart([...cart, product]);
-            toast.success("Success Notification !", {
-                position: "top-center"
-            });
-        }
+        setCart([...cart, product]);
+        toast.success("Product added to cart successfully!", {
+            position: "top-center"
+        });
     };
+
 
     const handleAddToWishlist = () => {
         if (wishlist.some((item) => item.product_id === product.product_id)) {

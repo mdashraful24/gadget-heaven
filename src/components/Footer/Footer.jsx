@@ -3,7 +3,7 @@ const Footer = () => {
         <div className=" bg-white">
             <div className="text-center pt-16">
                 <h2 className="text-3xl font-bold">Gadget Heaven</h2>
-                <p className="mt-3">Leading the way in cutting-edge technology and innovation.</p>
+                <p className="mt-3">Leading the way in cutting-edge <br className="lg:hidden" /> technology and innovation.</p>
             </div>
             <div className='border-b-2 w-10/12 mx-auto my-10'></div>
             <section className="w-7/12 mx-auto">

@@ -10,7 +10,7 @@ const Root = () => {
     const [cart, setCart] = useState([]);
     const [wishlist, setWishlist] = useState([]);
     return (
-        <div className="lg:w-11/12 mx-auto pt-5 pb-10 md:px-3">
+        <div className="lg:w-11/12 mx-auto md:pt-5 lg:pt-5 pb-10 md:px-3">
             <CartH.Provider value={[cart, setCart]}>
                 <WishlistH.Provider value={[wishlist, setWishlist]}>
                     <Navbar></Navbar>

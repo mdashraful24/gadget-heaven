@@ -14,7 +14,7 @@ const Navbar = () => {
             <li><NavLink to={"/"}>Home</NavLink></li>
             <li><NavLink to={"/statistics"}>Statistics</NavLink></li>
             <li><NavLink to={"/dashboard"}>Dashboard</NavLink></li>
-            <li><a>History</a></li>
+            <li><NavLink to={"/history"}>History</NavLink></li>
         </>
     );
 
@@ -39,8 +39,10 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content lg:bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            {links}
+                            className="menu menu-sm dropdown-content bg-[#9538E2] lg:bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <div>
+                                {links}
+                            </div>
                         </ul>
                     </div>
                     <a className={`btn btn-ghost text-lg lg:text-xl ${isHomePage ? 'text-white' : 'text-black'}`}>Gadget Heaven</a>
