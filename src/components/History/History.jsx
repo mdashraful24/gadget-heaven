@@ -4,7 +4,7 @@ import parches from '../../assets/parches.png';
 
 const History = () => {
     const [purchasesHistory] = useContext(HistoryHandle);
-
+    
     useEffect(() => {
         document.title = "History | Gadget Heaven";
     }, []);
@@ -21,7 +21,7 @@ const History = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:container mx-auto mt-10 px-8 lg:px-2">
+            <div className="lg:container mx-auto mt-10 px-5 md:px-10 lg:px-10">
                 <h1 className="text-3xl font-bold md:text-3xl lg:text-3xl text-black mb-7">Purchase History</h1>
                 {purchasesHistory.length > 0 ? (
                     purchasesHistory.map((purchase, index) => (

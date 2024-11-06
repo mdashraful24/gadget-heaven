@@ -13,8 +13,7 @@
             "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.5,
-        "rating_star": "★★★★☆"
+        "rating": 4.5
     },
     {
         "product_id": 20202,
@@ -30,8 +29,7 @@
             "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.8,
-        "rating_star": "★★★★☆"
+        "rating": 4.8
     },
     {
         "product_id": 30303,
@@ -47,8 +45,7 @@
             "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.4,
-        "rating_star": "★★★☆☆"
+        "rating": 4.4
     },
     {
         "product_id": 40404,
@@ -64,8 +61,7 @@
             "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.6,
-        "rating_star": "★★★☆☆"
+        "rating": 4.6
     },
     {
         "product_id": 50505,
@@ -81,8 +77,7 @@
             "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.3,
-        "rating_star": "★★☆☆☆"
+        "rating": 4.3
     },
     {
         "product_id": 60606,
@@ -98,8 +93,7 @@
             "Touchscreen: Touchscreen"
         ],
         "availability": true,
-        "rating": 4.7,
-        "rating_star": "★★★★☆"
+        "rating": 4.7
     },
     {
         "product_id": 70707,
@@ -115,8 +109,7 @@
             "Battery: Up to 18 hours"
         ],
         "availability": true,
-        "rating": 4.9,
-        "rating_star": "★★★★★"
+        "rating": 4.9
     },
     {
         "product_id": 80808,
@@ -132,8 +125,7 @@
             "Battery: 52Wh"
         ],
         "availability": true,
-        "rating": 4.7,
-        "rating_star": "★★★★☆"
+        "rating": 4.7
     },
     {
         "product_id": 90909,
@@ -149,8 +141,7 @@
             "Charging Type: USB-C"
         ],
         "availability": true,
-        "rating": 4.7,
-        "rating_star": "★★★★☆"
+        "rating": 4.7
     },
     {
         "product_id": 101010,
@@ -166,7 +157,6 @@
             "Charging Type: Lightning"
         ],
         "availability": true,
-        "rating": 4.6,
-        "rating_star": "★★★☆☆"
+        "rating": 4.6
     }
 ]

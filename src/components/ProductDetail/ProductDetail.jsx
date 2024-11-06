@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { CartH, WishlistH } from "../Root/Root";
 import { toast } from 'react-toastify';
 import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const ProductDetail = () => {
     const { product_id } = useParams();
@@ -19,26 +20,20 @@ const ProductDetail = () => {
     }
 
     const { product_image, product_title, price, description, specification, availability, rating, rating_star } = product;
-
+    
     useEffect(() => {
         if (wishlist.some((item) => item.product_id === product.product_id)) {
             setIsInWishlist(true);
         }
     }, [wishlist, product]);
-
     const handleAddToCart = () => {
         setCart([...cart, product]);
-        toast.success("Product added to Cart successfully!", {
-            position: "top-center"
-        });
+        toast.success("Product added to Cart successfully!");
     };
-
     const handleAddToWishlist = () => {
         if (!isInWishlist) {
             setWishlist([...wishlist, product]);
-            toast.success("Added to Wishlist!", {
-                position: "top-center"
-            });
+            toast.success("Product added to Wishlist successfully!");
             setIsInWishlist(true);
         }
     };
@@ -53,8 +48,8 @@ const ProductDetail = () => {
                             <img className="w-96 h-full" src={product_image} alt={product_title} />
                         </div>
                         <div className="lg:w-1/2 space-y-3">
-                            <h2 className="text-3xl font-bold">{product_title}</h2>
-                            <p className="text-lg font-semibold">Price: ${price}</p>
+                            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">{product_title}</h2>
+                            <p className="md:text-lg lg:text-lg font-semibold">Price: ${price}</p>
                             <p
                                 className={`rounded-2xl w-24 text-center py-0.5 ${availability
                                     ? "bg-lime-50 border border-[#23BE0A] text-[#23BE0A]"
@@ -73,13 +68,12 @@ const ProductDetail = () => {
                             <div>
                                 <p className="font-bold">Rating: </p>
                                 <div className="flex items-center gap-2">
-                                    {/* <span className="text-yellow-400 text-2xl">{rating_star}</span> */}
                                     <span className="flex text-yellow-400 text-xl">
                                         <FaStar />
                                         <FaStar />
                                         <FaStar />
                                         <FaStar />
-                                        <FaStar />
+                                        <FaRegStar />
                                     </span>
                                     <span className="bg-gray-200 px-2 py-0.5 text-sm rounded-3xl">{rating}</span>
                                 </div>

@@ -74,7 +74,7 @@ const Dascart = () => {
                 </div>
             </div>
 
-            <div className='bg-gray-100 py-10 px-10'>
+            <div className='bg-gray-100 py-10 px-5 md:px-10 lg:px-10'>
                 <div className="lg:container mx-auto lg:px-2">
                     <Tabs selectedIndex={activeTab === 'cart' ? 0 : 1} onSelect={(index) => setActiveTab(index === 0 ? 'cart' : 'wishlist')}>
                         <TabPanel>
@@ -84,22 +84,24 @@ const Dascart = () => {
                                 </div>
                                 <div className='flex flex-col md:flex-row lg:flex-row items-center gap-4 md:gap-5 lg:gap-5'>
                                     <h2 className='font-bold'>
-                                        Total cost: {cart.length === 0 || showModal ? 0 : totalCost}
+                                        Total cost: {cart.length === 0 || showModal ? 0 : totalCost.toFixed(2)}
                                     </h2>
-                                    <button
-                                        onClick={sortCartDescending}
-                                        className="btn rounded-3xl border-[#9538E2] text-[#9538E2] bg-white"
-                                    >
-                                        Sort by Price <img className='hidden lg:block' src={sortIcon} alt="sortIcon" />
-                                    </button>
-                                    <button
-                                        onClick={handlePurchase}
-                                        className="btn lg:text-base border-none rounded-3xl text-base text-white px-5"
-                                        style={{ background: 'linear-gradient(to right, #9933ff, #cc33ff)' }}
-                                        disabled={cart.length === 0 || totalCost === 0 || showModal}
-                                    >
-                                        Purchase
-                                    </button>
+                                    <div className='flex md:flex-row lg:flex-row items-center gap-5'>
+                                        <button
+                                            onClick={sortCartDescending}
+                                            className="btn rounded-3xl border-[#9538E2] text-[#9538E2] bg-white"
+                                        >
+                                            Sort by Price <img className='hidden lg:block' src={sortIcon} alt="sortIcon" />
+                                        </button>
+                                        <button
+                                            onClick={handlePurchase}
+                                            className="btn lg:text-base border-none rounded-3xl text-base text-white px-5"
+                                            style={{ background: 'linear-gradient(to right, #9933ff, #cc33ff)' }}
+                                            disabled={cart.length === 0 || totalCost === 0 || showModal}
+                                        >
+                                            Purchase
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             {cart.length > 0 ? (
@@ -160,7 +162,7 @@ const Dascart = () => {
                         <div className='border-b-2 w-10/12 mx-auto my-10'></div>
                         <div className='text-center space-y-2'>
                             <p className="text-lg">Thanks for purchasing.</p>
-                            <p>Total: {totalCost}</p>
+                            <p>Total: {totalCost.toFixed(2)}</p>
                         </div>
                         <button
                             onClick={handleCloseModal}
