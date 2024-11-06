@@ -20,27 +20,33 @@ const Dascart = () => {
     }, []);
 
     const totalCost = cart.reduce((sum, product) => sum + product.price, 0);
-
     const sortCartDescending = () => {
         const sortedCart = [...cart].sort((a, b) => b.price - a.price);
         setCart(sortedCart);
     };
-
     const handlePurchase = () => {
-        setPurchasesHistory([...purchasesHistory, { items: [...cart], total: totalCost }]);
+        const purchaseDate = new Date();
+        const newPurchase = {
+            items: [...cart],
+            total: totalCost,
+            date: purchaseDate.toString()
+        };
+        setPurchasesHistory([...purchasesHistory, newPurchase]);
         setShowModal(true);
     };
-
     const handleCloseModal = () => {
         setShowModal(false);
         setCart([]);
         navigate('/');
     };
-
     const handleDeleteCart = (index) => {
         const newCart = cart.filter((_, ind) => ind !== index);
         setCart(newCart);
     };
+    const handleDeleteWishlist = (index) => {
+        const newWishlist = wishlist.filter((_, ind) => ind !== index);
+        setWishlist(newWishlist);
+    }
 
     return (
         <div className={`relative ${showModal ? 'overflow-hidden' : ''}`}>
@@ -68,8 +74,8 @@ const Dascart = () => {
                 </div>
             </div>
 
-            <div className='bg-gray-100 py-10'>
-                <div className="lg:container mx-auto px-5 lg:px-2">
+            <div className='bg-gray-100 py-10 px-10'>
+                <div className="lg:container mx-auto lg:px-2">
                     <Tabs selectedIndex={activeTab === 'cart' ? 0 : 1} onSelect={(index) => setActiveTab(index === 0 ? 'cart' : 'wishlist')}>
                         <TabPanel>
                             <div className='flex flex-col md:flex-row lg:flex-row items-center justify-between mb-8'>
@@ -78,7 +84,7 @@ const Dascart = () => {
                                 </div>
                                 <div className='flex flex-col md:flex-row lg:flex-row items-center gap-4 md:gap-5 lg:gap-5'>
                                     <h2 className='font-bold'>
-                                        Total cost: {cart.length === 0 || showModal ? 0 : totalCost.toFixed(2)}
+                                        Total cost: {cart.length === 0 || showModal ? 0 : totalCost}
                                     </h2>
                                     <button
                                         onClick={sortCartDescending}
@@ -90,33 +96,25 @@ const Dascart = () => {
                                         onClick={handlePurchase}
                                         className="btn lg:text-base border-none rounded-3xl text-base text-white px-5"
                                         style={{ background: 'linear-gradient(to right, #9933ff, #cc33ff)' }}
-                                        disabled={cart.length === 0 || totalCost === '0.00'}
+                                        disabled={cart.length === 0 || totalCost === 0 || showModal}
                                     >
                                         Purchase
                                     </button>
-                                    {/* <button
-                                    onClick={handlePurchases}
-                                    className="btn border-none rounded-3xl text-base text-white px-5"
-                                    style={{ background: 'linear-gradient(to right, #9933ff, #cc33ff)' }}
-                                    disabled={cart.length === 0 || totalCost === '0.00'}
-                                >
-                                    Purchase
-                                </button> */}
                                 </div>
                             </div>
                             {cart.length > 0 ? (
                                 cart.map((product, index) => (
                                     <div key={`${product.product_id}-${index}`} className="flex justify-between items-center rounded-2xl p-5 mb-5 relative bg-white">
                                         <div className="flex items-center gap-5">
-                                            <img className="w-20 h-24 object-cover" src={product.product_image} alt={product.product_title} />
+                                            <img className="w-24 h-24" src={product.product_image} alt={product.product_title} />
                                             <div className='space-y-2'>
                                                 <h1 className="font-bold lg:text-xl">{product.product_title}</h1>
                                                 <p className="w-full text-sm lg:text-base text-gray-500 line-clamp-2">{product.description}</p>
-                                                <p className='font-semibold'>Price: ${product.price}</p>
+                                                <p className='font-semibold'>Price: $ {product.price}</p>
                                             </div>
                                         </div>
                                         <button className="absolute top-0.5 lg:top-2 right-2 md:right-5 lg:right-10 p-2" onClick={() => handleDeleteCart(index)}>
-                                            <img className='w-8 lg:w-full' src={xIcon} alt="" />
+                                            <img className='w-6 md:w-8 lg:w-full' src={xIcon} alt="" />
                                         </button>
                                     </div>
                                 ))
@@ -128,20 +126,20 @@ const Dascart = () => {
                         <TabPanel>
                             <h2 className="text-2xl font-bold mb-8 lg:mb-5">Wishlist</h2>
                             {wishlist.length > 0 ? (
-                                wishlist.map((product) => (
+                                wishlist.map((product, index) => (
                                     <div key={product.product_id} className="flex justify-between items-center rounded-2xl p-5 mb-5 relative bg-white">
                                         <div className="flex items-center gap-5">
-                                            <img className="w-32 h-36 object-cover" src={product.product_image} alt={product.product_title} />
+                                            <img className="w-32 h-36" src={product.product_image} alt={product.product_title} />
                                             <div className='space-y-2'>
                                                 <h1 className="font-bold md:text-lg lg:text-xl">{product.product_title}</h1>
                                                 <p className="text-xs md:text-sm lg:text-base text-gray-500 line-clamp-2">{product.description}</p>
-                                                <p className='text-sm md:text-base lg:text-base font-semibold'>Price: ${product.price}</p>
+                                                <p className='text-sm md:text-base lg:text-base font-semibold'>Price: $ {product.price}</p>
                                                 <button className="px-4 py-1.5 bg-[#9538E2] text-white rounded-3xl flex items-center space-x-2">
                                                     Add to Cart
                                                 </button>
                                             </div>
                                         </div>
-                                        <button className="absolute top-0.5 lg:top-2 right-2 md:right-5 lg:right-10 p-2">
+                                        <button onClick={() => handleDeleteWishlist(index)} className="absolute top-0.5 lg:top-2 right-2 md:right-5 lg:right-10 p-2">
                                             <img className='w-8 lg:w-full' src={xIcon} alt="" />
                                         </button>
                                     </div>
@@ -162,7 +160,7 @@ const Dascart = () => {
                         <div className='border-b-2 w-10/12 mx-auto my-10'></div>
                         <div className='text-center space-y-2'>
                             <p className="text-lg">Thanks for purchasing.</p>
-                            <p>Total: ${totalCost.toFixed(2)}</p>
+                            <p>Total: {totalCost}</p>
                         </div>
                         <button
                             onClick={handleCloseModal}

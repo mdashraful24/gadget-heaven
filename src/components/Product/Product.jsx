@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-
     const { product_id, product_title, product_image, price} = product;
 
     return (
@@ -9,12 +8,12 @@ const Product = ({ product }) => {
             <div className="card text-lg bg-white shadow-sm">
                 <div className="p-5">
                     <img
-                        className="rounded-xl mx-auto -mb-7 h-96"
+                        className="rounded-xl mx-auto -mb-7 h-80 w-80"
                         src={product_image}
                         alt="product_image"
                     />
                 </div>
-                <div className="card-body px-6 pb-6">
+                <div className="card-body pb-6">
                     <h2 className="card-title text-xl">
                         {product_title}
                     </h2>

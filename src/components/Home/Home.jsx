@@ -4,7 +4,6 @@ import Floating from "../Floating/Floating";
 import Products from "../Products/Products";
 
 const Home = () => {
-
     useEffect(() => {
         document.title = "Home | Gadget Heaven";
     }, []);

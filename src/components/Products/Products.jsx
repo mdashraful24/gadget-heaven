@@ -30,10 +30,10 @@ const Products = () => {
     };
 
     return (
-        <div className="w-11/12 lg:container mx-auto -mt-24 md:-mt-40 lg:-mt-34">
+        <div className="w-11/12 lg:container mx-auto -mt-24 md:-mt-40 lg:-mt-34 lg:px-10">
             <h2 className="text-4xl font-bold text-center mb-10">Explore Cutting-Edge Gadgets</h2>
             <div className="lg:flex gap-8">
-                <div className="p-5 rounded-xl lg:border md:w-full lg:w-60 lg:h-[295px] mx-auto bg-white mb-10 shadow-md">
+                <div className="rounded-xl lg:border md:w-full lg:w-60 lg:h-[430px] mx-auto bg-white mb-10 shadow-md p-5">
                     <div className="grid grid-cols-2 lg:grid-cols-1 md:grid-cols-4 gap-5">
                         <button
                             onClick={() => handleCategoryClick("All Products")}
@@ -59,13 +59,32 @@ const Products = () => {
                         >
                             Smart Watches
                         </button>
+                        <button
+                            onClick={() => handleCategoryClick("Chargers")}
+                            className={`btn rounded-3xl ${activeCategoryBtn === "Chargers" ? "bg-[#9538E2] text-white" : ""}`}
+                        >
+                            Chargers
+                        </button>
+                        <button
+                            onClick={() => handleCategoryClick("Power banks")}
+                            className={`btn rounded-3xl ${activeCategoryBtn === "Power banks" ? "bg-[#9538E2] text-white" : ""}`}
+                        >
+                            Power banks
+                        </button>
                     </div>
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {products.map(product => (
-                        <Product key={product.product_id} product={product}></Product>
-                    ))}
+                <div className={`lg:container ${products.length === 0 ? '' : 'grid md:grid-cols-2 lg:grid-cols-3 gap-6'}`}>
+                    {products.length === 0 ? (
+                        <div className="flex justify-center items-center w-full h-full">
+                            <p className="text-xl md:text-2xl lg:text-3xl font-bold">No products available</p>
+                        </div>
+                    ) : (
+                        products.map(product => (
+                            <Product key={product.product_id} product={product} />
+                        ))
+                    )}
                 </div>
+
             </div>
         </div>
     );

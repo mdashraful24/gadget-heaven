@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { createContext, useState } from "react";
-
 export const CartH = createContext(null);
 export const WishlistH = createContext(null);
 export const HistoryHandle = createContext();
@@ -28,5 +27,3 @@ const Root = () => {
 };
 
 export default Root;
-
-// className = "lg:w-11/12 mx-auto md:pt-5 lg:pt-5 pb-10 md:px-3"

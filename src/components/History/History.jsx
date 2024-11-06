@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import { HistoryHandle } from "../Root/Root";
+import parches from '../../assets/parches.png';
 
 const History = () => {
     const [purchasesHistory] = useContext(HistoryHandle);
@@ -20,14 +21,14 @@ const History = () => {
                     </div>
                 </div>
             </div>
-
             <div className="lg:container mx-auto mt-10 px-8 lg:px-2">
-                <h1 className="text-3xl font-bold text-black mb-7">Purchase History</h1>
+                <h1 className="text-3xl font-bold md:text-3xl lg:text-3xl text-black mb-7">Purchase History</h1>
                 {purchasesHistory.length > 0 ? (
                     purchasesHistory.map((purchase, index) => (
                         <div key={index} className="my-10 mx-auto">
-                            <div>
-                                <h2 className="text-xl font-semibold mb-2">Purchase {index + 1}</h2>
+                            <div className="mb-3 space-y-1">
+                                <h2 className="text-xl font-semibold">Purchase #{index + 1}</h2>
+                                <p className="text-sm text-gray-700 font-semibold">Date: <span className="font-normal">{purchase.date}</span></p>
                             </div>
                             <div>
                                 {purchase.items.map((item, ind) => (
@@ -40,7 +41,7 @@ const History = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <i class="fa-solid fa-check text-xl text-[#23BE0A] pr-6"></i>
+                                            <img className="w-8 md:w-10 lg:w-12" src={parches} alt="parches" />
                                         </div>
                                     </div>
                                 ))}

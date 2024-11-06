@@ -8,7 +8,6 @@ const Navbar = () => {
     const [cart, setCart]  = useContext(CartH);
     const [wishlist, setWishlist] = useContext(WishlistH);
 
-    // console.log(wishlist)
     const links = (
         <>
             <li><NavLink to={"/"}>Home</NavLink></li>
@@ -39,11 +38,18 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-[#9538E2] lg:bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <div className="text-white">
+                            className={`menu menu-sm dropdown-content ${isHomePage ? 'bg-black' : 'bg-gray-100 text-black font-semibold'} lg:bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow`}>
+                            <div>
                                 {links}
                             </div>
                         </ul>
+                        {/* <ul
+                            tabIndex={0}
+                            className="menu menu-sm dropdown-content bg-[#9538E2] lg:bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <div className="text-white font-bold">
+                                {links}
+                            </div>
+                        </ul> */}
                     </div>
                     <a className={`btn btn-ghost text-lg lg:text-xl ${isHomePage ? 'text-white' : 'text-black'}`}>Gadget Heaven</a>
                 </div>

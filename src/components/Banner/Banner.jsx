@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
-
     const navigateDashboard = useNavigate();
     const goDashboard = () => {
         navigateDashboard('dashboard');

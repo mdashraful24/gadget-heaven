@@ -4,16 +4,15 @@ import ProDetailBan from "../ProDetailBan/ProDetailBan";
 import { useContext } from "react";
 import { CartH, WishlistH } from "../Root/Root";
 import { toast } from 'react-toastify';
+import { FaStar } from "react-icons/fa";
 
 const ProductDetail = () => {
     const { product_id } = useParams();
     const data = useLoaderData();
     const id = parseInt(product_id);
-
     const [cart, setCart] = useContext(CartH);
     const [wishlist, setWishlist] = useContext(WishlistH);
     const [isInWishlist, setIsInWishlist] = useState(false);
-
     const product = data.find((item) => item.product_id === id);
     if (!product) {
         return <p>Product not found.</p>;
@@ -71,15 +70,20 @@ const ProductDetail = () => {
                                     <li key={index}>{spec}</li>
                                 ))}
                             </ol>
-
                             <div>
                                 <p className="font-bold">Rating: </p>
                                 <div className="flex items-center gap-2">
-                                    <span className="text-yellow-400 text-2xl">{rating_star}</span>
+                                    {/* <span className="text-yellow-400 text-2xl">{rating_star}</span> */}
+                                    <span className="flex text-yellow-400 text-xl">
+                                        <FaStar />
+                                        <FaStar />
+                                        <FaStar />
+                                        <FaStar />
+                                        <FaStar />
+                                    </span>
                                     <span className="bg-gray-200 px-2 py-0.5 text-sm rounded-3xl">{rating}</span>
                                 </div>
                             </div>
-
                             <div className="flex gap-4 mt-4">
                                 <button onClick={handleAddToCart} className="px-4 py-2 bg-[#9538E2] text-white rounded-3xl flex items-center space-x-2">
                                     <span>Add to Cart</span>
