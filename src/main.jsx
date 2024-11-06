@@ -8,7 +8,6 @@ import {
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
-// import Dashboard from './components/Dashboard/Dashboard';
 import ProductDetail from './components/ProductDetail/ProductDetail';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

@@ -19,7 +19,7 @@
     {
         "product_id": 20202,
         "product_title": "iPhone 14 Pro",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_image": "https://i.ibb.co.com/5vndtY9/apple-iphone-14-pro.jpg",
         "category": "Smartphone",
         "price": 1099.99,
         "description": "Apple iPhone 14 Pro with Super Retina XDR display and A15 Bionic chip.",
@@ -36,7 +36,7 @@
     {
         "product_id": 30303,
         "product_title": "OnePlus 10",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_image": "https://i.ibb.co.com/LnsGrhX/oneplus-10-pro.jpg",
         "category": "Smartphone",
         "price": 779.99,
         "description": "OnePlus 10 with 6.55-inch AMOLED display and Hasselblad triple-lens camera.",
@@ -53,7 +53,7 @@
     {
         "product_id": 40404,
         "product_title": "Pixel 7",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_image": "https://i.ibb.co.com/M2Xd6Ts/google-pixel7-new.jpg",
         "category": "Smartphone",
         "price": 649.99,
         "description": "Google Pixel 7 with OLED display and Google Tensor processor.",
@@ -70,7 +70,7 @@
     {
         "product_id": 50505,
         "product_title": "Galaxy A52",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_image": "https://i.ibb.co.com/7KyrrtJ/samsung-galaxy-a52-4g.jpg",
         "category": "Smartphone",
         "price": 499.99,
         "description": "Samsung Galaxy A52 with Snapdragon processor and 6.5-inch display.",
@@ -87,7 +87,7 @@
     {
         "product_id": 60606,
         "product_title": "Xiaomi Mi 11",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_image": "https://i.ibb.co.com/7p5d6wz/xiaomi-mi11.jpg",
         "category": "Smartphone",
         "price": 599.99,
         "description": "Xiaomi Mi 11 with AMOLED display and Snapdragon 888 processor.",
@@ -104,7 +104,7 @@
     {
         "product_id": 70707,
         "product_title": "MacBook Air M2",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_image": "https://i.ibb.co.com/NjzxS6T/mba13-midnight-select-202402.jpg",
         "category": "Laptop",
         "price": 1049.99,
         "description": "Apple MacBook Air with M2 chip and 13-inch Retina display.",
@@ -121,7 +121,7 @@
     {
         "product_id": 80808,
         "product_title": "Dell XPS 15",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_image": "https://i.ibb.co.com/VjnCMJG/xps-15-9510-01-500x500.jpg",
         "category": "Laptop",
         "price": 1399.99,
         "description": "Dell XPS 15 with InfinityEdge display and Intel's 11th-gen processor.",
@@ -137,11 +137,11 @@
     },
     {
         "product_id": 90909,
-        "product_title": "Sony WF-1000XM5",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_title": "Samsung Galaxy Watch4",
+        "product_image": "https://i.ibb.co.com/HKmbZxx/watch4.jpg",
         "category": "TWS",
         "price": 299.99,
-        "description": "Sony WF-1000XM5 true wireless earbuds with noise cancellation.",
+        "description": "It offers a range of features, including fitness tracking, notifications, and customizable watch faces.",
         "specification": [
             "Battery Life: 24 hours with charging case",
             "Water Resistance: IPX4",
@@ -154,11 +154,11 @@
     },
     {
         "product_id": 101010,
-        "product_title": "AirPods Pro 2",
-        "product_image": "https://i.ibb.co.com/92ntxnJ/Galaxy-S23.jpg",
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/DKTm6Xk/Apple-watch-series7.jpg",
         "category": "TWS",
         "price": 249.99,
-        "description": "Apple AirPods Pro with noise cancellation and spatial audio.",
+        "description": "The largest, most advanced display yet, breakthrough health innovations, and is the most durable.",
         "specification": [
             "Battery Life: 24 hours with charging case",
             "Water Resistance: IPX4",

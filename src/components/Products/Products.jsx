@@ -30,10 +30,10 @@ const Products = () => {
     };
 
     return (
-        <div className="w-11/12 mx-auto -mt-28">
+        <div className="w-11/12 lg:container mx-auto -mt-24 md:-mt-40 lg:-mt-34">
             <h2 className="text-4xl font-bold text-center mb-10">Explore Cutting-Edge Gadgets</h2>
             <div className="lg:flex gap-8">
-                <div className="p-5 rounded-xl lg:border md:w-full lg:w-80 lg:h-[295px] mx-auto mb-10 shadow-md">
+                <div className="p-5 rounded-xl lg:border md:w-full lg:w-60 lg:h-[295px] mx-auto bg-white mb-10 shadow-md">
                     <div className="grid grid-cols-2 lg:grid-cols-1 md:grid-cols-4 gap-5">
                         <button
                             onClick={() => handleCategoryClick("All Products")}
@@ -57,7 +57,7 @@ const Products = () => {
                             onClick={() => handleCategoryClick("TWS")}
                             className={`btn rounded-3xl ${activeCategoryBtn === "TWS" ? "bg-[#9538E2] text-white" : ""}`}
                         >
-                            TWS
+                            Smart Watches
                         </button>
                     </div>
                 </div>
@@ -72,4 +72,3 @@ const Products = () => {
 };
 
 export default Products;
-
