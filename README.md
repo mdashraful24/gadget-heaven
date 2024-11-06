@@ -1,3 +1,7 @@
+Project Name: Gadget Heaven
+
+Description: This React-based e-commerce website allows users to browse products, view detailed product information, add items to their cart, manage wishlists, and proceed to checkout. The project uses React Router for seamless navigation, Toastify for in-app notifications, and Tailwind CSS for responsive styling. State management is handled efficiently using `useState`, `useEffect`, and `useContext` hooks, enabling smooth interaction across the application.
+
 Live link:
 
     • Netlify: https://b10a8-gadget-heaven.netlify.app/
@@ -5,6 +9,8 @@ Live link:
     • Surge: https://classy-mice.surge.sh/
 
 Requirement  Document  Link:
+
+    • https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf
 
 React Fundamental Concepts Used in This Project:
 
@@ -19,7 +25,7 @@ React Fundamental Concepts Used in This Project:
 
 Data Handling and Management –
 
-    • Context API: Used for managing and sharing global state such as the cart, wishlist, and purchase history across multiple components.
+    • Context API: To provide a global state for the cart, wishlist, and user data, allowing state sharing across components without prop drilling.
 
 5 Key Features of the Project:
 
